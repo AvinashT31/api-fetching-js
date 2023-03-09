@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fetching</title>
+
+    <style>
+      #products{
+        border: 1px solid black;
+        width: 100%;
+        display: flex;
+        flex-wrap:  wrap;
+        justify-content: space-evenly;
+      }
+
+      #products > div{
+        border: 1px solid black;
+        width: 24%;
+        height: 300px;
+      }
+
+      
+      #products > div > h1{
+        font-size: 14px;
+      }
+
+      #products > div > img{
+        width: 100%;
+        height: 200px;
+      }
+
+
+    </style>
+</head>
+<body>
+    <h1>Data fetching</h1>
+    <button onclick="dataFetching()">show the data</button>
+    <div id="products">
+
+    </div>
+
+    <script src="server.js"></script>
+</body>
+</html>
